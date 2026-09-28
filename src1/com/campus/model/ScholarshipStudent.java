@@ -4,6 +4,7 @@ public class ScholarshipStudent extends Student {
 
     private double scholarshipPercentage;
 
+    // Constructor
     public ScholarshipStudent(int studentid,
                               String studentname,
                               int age,
@@ -32,14 +33,21 @@ public class ScholarshipStudent extends Student {
         System.out.println("Scholarship Student");
     }
 
+    // Override displayStudentInfo()
     @Override
-    public void displayStudentInfo(){
+    public void displayStudentInfo() {
+
         super.displayStudentInfo();
-        System.out.println("Schorlarship Percentage: " + scholarshipPercentage);
+
+        System.out.println(
+                "Scholarship Percentage: " + scholarshipPercentage + "%"
+        );
     }
 
-    @override
-    public void displayStudentInfo(boolean showMarks){
-        super.displatStudentInfo(showMarks);
+    // Override overloaded method
+    @Override
+    public void displayStudentInfo(boolean showMarks) {
+
+        super.displayStudentInfo(showMarks);
     }
 }
