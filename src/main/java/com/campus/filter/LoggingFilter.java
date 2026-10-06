@@ -17,5 +17,5 @@ public class LoggingFilter extends HttpFilter {
         chain.doFilter(request, response);
         System.out.println("Response sent");
     }
-    
+
 }
